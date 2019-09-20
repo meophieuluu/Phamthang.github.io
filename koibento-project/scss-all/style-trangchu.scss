@@ -486,13 +486,37 @@ header{
 						
 					}
 			}
+			.main-ul-cart-top{
+				list-style:none;
+				.dropdown{
+						display:block;
+					
+					.nav-dropdown-cart{
+					 transform: translate3d(-131px, 29px, 0px) !important;
+						z-index:9;
+						padding:20px;
+						min-width:250px;
+						text-align:left;
+						border:1px solid $myred2;
+						border-radius:0;
+						color:#444;
+						background:#fff;
+							li{
+								margin:0;
+								display:block;
+							}
+					}
+				}
+					.dropdown>.dropdown-menu:active {
+						pointer-events: none;
+						}
+			}
 	}
 	.show-xs{
 		display:none !important;
 	}
+	/**cart koi-top**/
 	/****visible responsive end****/
-	background:$color-white;
-	color:#000;
 		.toggler-icon{
 			display:block;
 			height:4px;
@@ -558,6 +582,31 @@ header{
 		margin-top:11px;
 		display:flex;
 		justify-content:flex-end;
+		/*dropdown menu shoping cart*/
+		.dropdown{
+			display:block;
+		}
+		.nav-dropdown-cart{
+			padding:20px;
+			min-width:250px;
+			text-align:left;
+			border:1px solid $myred2;
+			border-radius:0;
+			color:#444;
+			background:#fff;
+				li{
+					margin:0;
+					display:block;
+				}
+		}
+		.dropdown:hover>.dropdown-menu {
+			  display: block;
+			  transform: translate3d(-145px, -2px, 0px) !important;
+			}
+		.dropdown>.dropdown-menu:active {
+			pointer-events: none;
+			}
+	/*end dropdown-menu-shopping-cart*/
 		a{
 			text-decoration:none;
 			display:flex;
