@@ -115,12 +115,24 @@
 					</nav>
 				</div>
 				<div class="cart-koi-top cart-koi-img-top show-xs">
-						<a href="index-cart.html">
-								<span class="cart-price">
-									<span class="cart-amount price-amout"></span>
-								</span>
-								<img src="images/cart.png">
-						</a>
+					<ul class="main-ul-cart-top">
+						<li class="dropdown">
+							<a href="index-cart.html" class="" data-toggle="dropdown">
+									<span class="cart-price">
+										<span class="cart-amount price-amout"></span>
+									</span>
+									<img src="images/cart.png">
+							</a>
+						
+							<ul class="dropdown-menu nav-dropdown-cart" >
+									<li class="widget-dropdown-menu dropdown-item">
+										<div class="shopping-widget-content">
+											<p class="mini-cart-empty-alert">Chưa có sản phẩm trong giỏ hàng.</p>
+										</div>
+									</li>
+							</ul>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -176,15 +188,25 @@
 					</form>
 				</div>
 				<div class="col-md-3 col-xs-12 hidden-xs">
-					<span class="cart-koi cart-koi-img">
-						<a href="index-cart.html">
-							<span class="hd-cart-title">GIỎ HÀNG / 
-								<span class="cart-price">
-									<span class="cart-amount price-amout">0$</span>
+					<ul class="cart-koi cart-koi-img">
+						<li class="dropdown">
+							<a href="index-cart.html" id="acartmainshop">
+								<span class="hd-cart-title">GIỎ HÀNG / 
+									<span class="cart-price">
+										<span class="cart-amount price-amout">0$</span>
+									</span>
 								</span>
-							</span><img src="images/cart.png">
-						</a>
-					</span>
+								<img src="images/cart.png">
+							</a>
+							<ul class="dropdown-menu nav-dropdown-cart" >
+								<li class="widget-dropdown-menu dropdown-item">
+									<div class="shopping-widget-content">
+										<p class="mini-cart-empty-alert">Chưa có sản phẩm trong giỏ hàng.</p>
+									</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
